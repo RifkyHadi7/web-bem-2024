@@ -41,7 +41,7 @@ const Sambutan = () => {
   return (
     <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <div className="cust-container">
-        <div className="grid grid-cols-4 lg:grid-cols-4 lg:gap-2 py-10">
+        <div className="lg:grid flex-col lg:grid-cols-4 lg:gap-2 py-10">
           <div className="col-span-full flex flex-col items-center">
             <div className="items-center">
               <motion.img
@@ -78,7 +78,7 @@ const Sambutan = () => {
           </div>
           <div className="mt-10 relative">
             <button
-              className="ring-1 ring-cust-green hover:ring-cust-white bg-cust-green outline-3 outline-gray-200 focus:outline-cust-white focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full ml-28"
+              className="ring-1 ring-cust-green hover:ring-cust-white bg-cust-green outline-3 outline-gray-200 focus:outline-cust-white focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-28 ml-0"
               aria-describedby={idPresiden}
               type="button"
               onClick={handleClickPresiden}
@@ -120,7 +120,7 @@ const Sambutan = () => {
           <div className="mt-10 relative">
             <div className="wapres" style={{ position: 'relative', width: '100%', height: '100%' }}>
               <button
-                className="ring-1 ring-cust-green hover:ring-cust-white bg-cust-green outline-3 outline-gray-200 focus:outline-cust-white text-white text-lg font-semibold py-1.5 px-5 rounded-full ml-6"
+                className="ring-1 ring-cust-green hover:ring-cust-white bg-cust-green outline-3 outline-gray-200 focus:outline-cust-white text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-6 ml-0"
                 aria-describedby={idWakilPresiden}
                 type="button"
                 onClick={handleClickWakilPresiden}
@@ -156,7 +156,7 @@ const Sambutan = () => {
                 }}
                 animate={{ marginTop: openWakilPresiden ? '80px' : '30px' }}
                 src={contoh}
-                className="lg:w-[200px] mt-5 ml-16"
+                className="lg:w-[200px] mt-5 lg:ml-16 mx-auto"
               />
             </div>
           </div>

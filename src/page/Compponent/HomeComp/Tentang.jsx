@@ -2,8 +2,8 @@ import React from 'react'
 import daunKanan from '../../../assets/daunKanan.png'
 import daunKiri from '../../../assets/daunKiri.png'
 import logoTentang from '../../../assets/logoTentang.png'
-import logoTentangPC from '../../../assets/LogoTentangPC.png'
 import bgTentang from '../../../assets/bgTentang.png'
+import bgTentangHP from '../../../assets/bgTentangHP.png'
 import TentangTittle from '../../../assets/TentangTittle.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
@@ -11,19 +11,21 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Tentang = () => {
     return (
-        <div className='w-full bg-cust-background h-max  -mb-20 xl:-mb-20 py-[30rem] relative xl:py-0 xl:pb-0'>
+        <div className='w-full bg-cust-background h-max  -mb-44 xl:-mb-24 py-[30rem] relative xl:py-0 xl:pb-0'>
             {/* BACKGROUND */}
-            <img src={bgTentang} alt="" className='hidden md:block' />
+            <img src={bgTentang} alt="" className='hidden xl:block' />
+            <img src={bgTentangHP} alt="" className='absolute top-0 xl:hidden'/>
 
             <img src={daunKiri} alt="daun kiri" className='h-20 xl:h-60 left-0 top-0 absolute xl:-top-8' />
             <img src={daunKanan} alt="daun kanan" className='h-20 xl:h-60 right-0 top-0 absolute xl:-top-8' />
             <div className='w-full flex h-max absolute justify-center top-8 xl:top-7'>
             <img src={TentangTittle} alt="" className='absolute w-[20rem] mx-auto text-4xl xl:text-7xl xl:pt-8 xl:w-[43rem]' />
             </div>
-            <div className='absolute h-max pb-96 xl:pb-56 top-36 xl:top-64 xl:flex xl:flex-row-reverse xl:mx-20 xl:gap-40'>
+            <div className='absolute h-max pb-96 xl:pb-56 top-32 xl:top-64 xl:flex xl:flex-row-reverse xl:mx-20 xl:gap-60'>
                 <img src={logoTentang} alt="logo BEM" className=' w-44 h-64 mx-auto xl:hidden' />
+                
                 <div className='hidden relative xl:flex flex-col items-center w-64 h-[26rem] mt-4 mx-auto'>
-                <img src={logoTentangPC} alt="logo BEM" className='w-60'/>
+                <img src="https://res.cloudinary.com/djpkvtoql/image/upload/v1715358877/s1pf8eejl19il2wmddnx.png" alt="logo BEM" className='w-60'/>
                 <div className='h-16 box-border -mt-3 bg-cust-gray w-[0.14rem] '></div>
                 <div className='w-[23rem] -rotate-[4deg] h-16 bg-orange-300 mr-1 rounded-full font-lato text-cust-white text-2xl flex items-center justify-center absolute -bottom-1'></div>
                 <div className='w-[23rem] rotate-3 h-16 bg-cust-orange rounded-full font-lato text-cust-white text-2xl flex items-center justify-center'>Kabinet Arthakara</div>
