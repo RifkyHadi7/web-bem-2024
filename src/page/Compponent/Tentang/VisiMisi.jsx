@@ -6,7 +6,7 @@ import background from "../../../assets/bgcorak.svg";
 
 export default function VisiMisi() {
   return (
-    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(./src/assets/bgVisiMisi.png)`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
+    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(https://res.cloudinary.com/dq11ayv02/image/upload/v1715863300/web-bem-2024/bgVisiMisi.png)`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
 
         <div className='flex pb-0 pt-24 justify-end'>
         <img src={Visi} alt="Visi" className='mx-20'/>
