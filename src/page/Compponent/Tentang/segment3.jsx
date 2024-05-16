@@ -11,8 +11,6 @@ const segment3 = () => {
             <ArahGerak/>
             <NilaiKerja/>
             <Segment4/>
-
-
         </div>
      );
 }

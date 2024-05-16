@@ -28,7 +28,7 @@ const Box = ({ title, description }) => (
       <div className='box-border  p-3 bg-orange-200 rounded-full text-center'>
         <h1 className='text-cust-orange font-bold font-lato'>{title}</h1>
       </div>
-      <p className='text-cust-green text-center font-lato'>{description}</p>
+      <p className='text-cust-green text-center font-lato pt-2 h-28'>{description}</p>
     </div>
   </div>
 );

@@ -2,28 +2,25 @@ import React from 'react'
 import Misi from '../../../assets/Misi.svg'
 import Visi from '../../../assets/Visi.svg'
 import background from "../../../assets/bgcorak.svg";
-import bgArtikelPC from '../../../assets/bgArtikelPC.png'
+import bgArtikelHP from '../../../assets/bgArtikelHP.png'
 
 export default function VisiMisi() {
   return (
-    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(${bgArtikelPC})`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
+    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(${bgArtikelHP})`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
   
 
 
 
       
         <div className='flex pb-0 pt-24 justify-end'>
-        <img src={Visi} alt="Visi" className='mr-20'/>
-            <div className='font-lato text-cust-green rounded-xl box-border my-20 p-10 h-38 bg-cust-yellow'>
-                <p className='my-1'>Menjadikan BEM FILKOM UB sebagai WADAH KOLABORASI</p>
-                <p className='my-1'>bagi KBM FILKOM untuk MEMBERSAMAI dalam</p>
-                <p className='my-1'>menciptakan lingkungan kelembagaan yang harmonis,</p>
-                <p className='my-1'>adaptif, dan inklusif demi mewujudkan KEBERMANFAATAN SESAMA.</p>
+        <img src={Visi} alt="Visi" className='mx-20'/>
+            <div className='font-lato text-xl text-cust-green rounded-3xl box-border mr-20 mx-8 my-20 p-10 h-38 bg-cust-yellow'>
+                <p className='my-1'>Menjadikan BEM FILKOM UB sebagai WADAH KOLABORASI bagi KBM FILKOM untuk MEMBERSAMAI dalam menciptakan lingkungan kelembagaan yang harmonis, adaptif, dan inklusif demi mewujudkan KEBERMANFAATAN SESAMA.</p>
             </div>
         </div>
         <div className='flex pt-5 mt-0 justify-start'>
         
-        <div className='font-lato text-left text-cust-green rounded-xl box-border my-20 p-10 h-38 bg-cust-yellow'>
+        <div className='font-lato text-justify text-xl text-cust-green rounded-3xl box-border ml-20 mx-8 my-20 px-14 p-10 h-38 bg-cust-yellow'>
           <ol style={{ listStyleType: 'decimal' }}>
             <li>Memaksimalkan potensi dan kesejahteraan anggota BEM FILKOM UB melalui pengembangan keterampilan, mental, dan peningkatan partisipasi dalam kegiatan organisasi. (Internal)</li>
             <li>Membangun hubungan kemitraan yang stabil dengan kelembagaan yang ada di FILKOM untuk menciptakan kerja sama mutualisme dan media pertukaran ide untuk mewujudkan inisiatif bersama. (Eksternal)</li>
@@ -36,7 +33,7 @@ export default function VisiMisi() {
 
         
 
-          <img src={Misi} alt="Misi" className='ml-20'/>
+          <img src={Misi} alt="Misi" className='mx-20'/>
         </div>
     </div>
   )

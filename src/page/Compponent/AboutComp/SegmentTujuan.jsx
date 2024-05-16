@@ -28,10 +28,10 @@ const SegmentTujuan = () => {
           />
         </div>
         <div className="lg:text-start mt-4 lg:mt-0 lg:ml-4 lg:basis-1/2 text-center pb-10">
-          <div className="font-lato font-extrabold text-[50px] pt-10 text-cust-green pr-4 sm:pr-0 lg:text-start lg:pl-4">
+          <div className="font-lato font-extrabold text-[50px] pt-10 text-cust-green pr-4 sm:pr-0 lg:text-start lg:pl-4 outline-4 outline-cust-green">
             BEM FILKOM UB
           </div>
-          <div className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-8 sm:pr-0 font-lato mb-10 lg:text-[20px] text-[16px] pl-4">
+          <div className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-8 sm:pr-0 font-lato mb-10 lg:text-[20px] text-[16px] pl-4 text-cust-black">
             BEM FILKOM UB merupakan badan eksekutif yang memiliki 4 fungsi utama dalam membantu mahasiswa FILKOM UB berproses, diantaranya ialah pelayanan khususnya dibidang advokasi dan kesejahteraan mahasiswa, pengembangan khususnya dalam mengembangkan soft skill serta minat bakat mahasiswa, pengabdian dalam mengamalkan salah satu Tri Dharma Perguruan Tinggi, dan pergerakan yang mewadahi mahasiswa untuk bertindak sebagai inisiator dalam mengawal isu yang beredar.
           </div>
         </div>

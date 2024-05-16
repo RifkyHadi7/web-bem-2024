@@ -37,25 +37,22 @@ const ArahGerakComponent = () => (
     </div>
 
     <div className="flex items-center">
-
-    
-
-    <div className="flex ml-20 mb-20"> 
+    <div className="flex justify-center mx-28 mb-20"> 
       <div>
-        <img src={ArahGerak} alt="Arah Gerak" className='mb-10 ml-20'/>
+      <div className='flex justify-center'><img src={ArahGerak} alt="Arah Gerak" className='w-3/4'/></div>
         {items.map((item, index) => (
-          <div key={index} className="box-border bg-cust-orange rounded-full ml-20 my-5 p-4">
+          <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-5 p-4">
             <p className="text-center font-lato text-cust-white">{item}</p>
           </div>
         ))}
       </div>
-      <div className="mx-20 justify-center">
+      <div className="mx-28 flex justify-center">
         <img src={Linemid} alt="Line Arah" />
       </div>
       <div>
-        <img src={BudayaKerja} alt="Budaya Kerja" className='mb-10' />
+        <div className='flex justify-center'><img src={BudayaKerja} alt="Budaya Kerja" className='w-3/4'/></div>
         {items2.map((item, index) => (
-          <div key={index} className="box-border bg-cust-orange rounded-full my-5 p-4">
+          <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-5 p-4">
             <p className="text-center font-lato text-cust-white">{item}</p>
           </div>
         ))}

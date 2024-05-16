@@ -14,7 +14,7 @@ const SegmentFiloWarna = () => {
             <div className='w-full'>
                 <img src={HeadFiloWarna} className='mx-auto w-72 lg:w-[600px] mb-16'/>
             </div>
-            <div className='w-full grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-y-[60px] gap-x-8 px-2 lg:px-10'>
+            <div className='w-full grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-y-[60px] gap-x-8 px-2 lg:px-10 text-cust-black'>
                 <CardFiloWarL srcimg={WarIjoK}/>
                 <CardFiloWarR srcimg={WarOrange}/>
                 <CardFiloWarL srcimg={WarIjoB}/>
