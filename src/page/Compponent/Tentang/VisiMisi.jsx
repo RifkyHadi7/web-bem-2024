@@ -2,16 +2,12 @@ import React from 'react'
 import Misi from '../../../assets/Misi.svg'
 import Visi from '../../../assets/Visi.svg'
 import background from "../../../assets/bgcorak.svg";
-import bgArtikelHP from '../../../assets/bgArtikelHP.png'
+
 
 export default function VisiMisi() {
   return (
-    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(${bgArtikelHP})`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
-  
+    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(./src/assets/bgVisiMisi.png)`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
 
-
-
-      
         <div className='flex pb-0 pt-24 justify-end'>
         <img src={Visi} alt="Visi" className='mx-20'/>
             <div className='font-lato text-xl text-cust-green rounded-3xl box-border mr-20 mx-8 my-20 p-10 h-38 bg-cust-yellow'>
