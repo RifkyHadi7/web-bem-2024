@@ -6,6 +6,7 @@ import NotFound from "./page/NotFound";
 import Footer from "./page/Compponent/Footer";
 import Navbar from "./page/Compponent/Navbar";
 import Tentangpage from "./page/Tentangpage";
+import ComingSoon from "./page/ComingSoon";
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />
           <Route path="/tentang" element={<Tentangpage />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />
       </BrowserRouter>
