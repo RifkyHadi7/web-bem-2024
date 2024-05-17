@@ -12,15 +12,15 @@ import Maknalingkaran22 from '../../../assets/Maknalingkaran22.png'
 
 const SegmentFiloLogo = () => {
   return (
-    <div className="overflow-hidden flex flex-col w-full mx-auto lg:bg-cover bg-contain lg:max-w-[1920px] h-full lg:h-auto -mt-8 lg:-mt-24 mb-0 pb-20 lg:pb-32 justify-center" style={{backgroundImage:`url(${BgFiloLogo})`}}>
+    <div className="overflow-hidden flex flex-col w-full mx-auto lg:bg-cover bg-contain lg:max-w-[1920px] h-full lg:h-auto -mt-16 lg:-mt-24 mb-0 pb-16 lg:pb-32 justify-center" style={{backgroundImage:`url(${BgFiloLogo})`}}>
         <div className='w-screen lg:w-full h-full mt-16 lg:mt-32 px-0'>
             <div className='flex flex-row w-full justify-between'>
-                <img src={TangkaiWKiri} alt="" className='w-20 lg:w-64'/>
-                <img src={HeadFiloLogo} alt="" className='w-60 lg:w-[664px] pt-12'/>
-                <img src={TangkaiWKanan} alt="" className='w-20 lg:w-64' />
+                <img src={TangkaiWKiri} alt="" className='w-[20vw] lg:w-64'/>
+                <img src={HeadFiloLogo} alt="" className='-ml-[10vw] w-[70vw] lg:w-[664px] pt-12'/>
+                <img src={TangkaiWKanan} alt="" className='-ml-[10vw] w-[20vw] lg:w-64' />
             </div>
         </div>
-        <div className='grid grid-cols-1 grid-rows-4 lg:grid-rows-2 lg:grid-cols-2 gap-x-36 gap-y-24 h-full mt-10 px-12 bg-contain text-cust-white' style={{backgroundImage:`url(${BgFiLogoAlt})`}}>
+        <div className='grid grid-cols-1 grid-rows-4 lg:grid-rows-2 lg:grid-cols-2 gap-x-36 gap-y-20 lg:gap-y-24 h-full mt-10 px-12 bg-contain text-cust-white' style={{backgroundImage:`url(${BgFiLogoAlt})`}}>
             <KartuFiloLogo title="Burung Phoenix" imgsrc={Maknaburung11} desc="Melambangkan semangat berapi-api yang tak pernah padam dan kehadirannya yang menjadi penerang di sekelilingnya."/>
             <KartuFiloLogo title="Sayap" imgsrc={Maknasayap12} desc="Gestur membentangkan sayap bermakna organisasi ini sebagai wadah kolaborasi untuk menuju tempat yang lebih tinggi."/>
             <KartuFiloLogo title="Ekor Berapi" imgsrc={Maknaekor21} desc="Bermakna semangat dalam diri yang kuat, dan jumlah ekor merepresentasikan jumlah program studi yang ada di FILKOM UB."/>
