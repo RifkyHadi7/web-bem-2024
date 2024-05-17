@@ -33,8 +33,7 @@ const Sambutan = () => {
 
   const idPresiden = openPresiden ? 'presiden-popper' : undefined;
   const idWakilPresiden = openWakilPresiden ? 'wakil-presiden-popper' : undefined;
-  const longText = `
-Puji dan syukur kita panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan karunia-Nya yang selalu menyertai perjuangan kami. BEM FILKOM UB 2024 Kabinet Arthakara hadir bagaikan pena yang siap mengukir cerita pada setiap lembaran, dengan tekad untuk memberikan sumbangsih demi kebermanfaatan yang berkelanjutan.
+  const longText = `Puji dan syukur kita panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan karunia-Nya yang selalu menyertai perjuangan kami. BEM FILKOM UB 2024 Kabinet Arthakara hadir bagaikan pena yang siap mengukir cerita pada setiap lembaran, dengan tekad untuk memberikan sumbangsih demi kebermanfaatan yang berkelanjutan.
 
 Kami menjalankan kewajiban dari aspek Pengembangan, Pelayanan, Pengabdian, dan Pergerakan, yang menjadi identitas kami dalam mempertahankan nilai vital sebuah organisasi eksekutif. Dengan semangat dan partisipasi dari seluruh anggota KBMFILKOM, kami hadir untuk membawa perubahan positif dan inovasi dalam setiap langkah yang kami ambil.
 
