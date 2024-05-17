@@ -85,7 +85,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
           </div>
           <div className="mt-[40px] lg:mt-10 relative">
             <button
-              className="ring-1 ring-cust-green bg-cust-green outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-28 ml-0 min-w"
+              className="font-lato ring-1 ring-cust-green bg-cust-green outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-28 ml-0 min-w"
               aria-describedby={idPresiden}
               type="button"
               onClick={handleClickPresiden}
@@ -129,7 +129,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
           <div className="mt-10 relative">
             <div className="wapres" style={{ position: 'relative', width: '100%', height: '100%' }}>
               <button
-                className="ring-1 ring-cust-green  bg-cust-green outline-3 outline-gray-200 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-6 ml-0"
+                className="font-lato ring-1 ring-cust-green  bg-cust-green outline-3 outline-gray-200 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-6 ml-0"
                 aria-describedby={idWakilPresiden}
                 type="button"
                 onClick={handleClickWakilPresiden}
@@ -137,8 +137,8 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               >
                 Wakil Presiden
               </button>
-              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] lg:ml-[120px]" />
-              <img src={isPictureDownWakilPresiden? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:ml-[160px]" />
+              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] lg:ml-[120px]"/>
+              <img src={isPictureDownWakilPresiden? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:ml-[160px]"/>
               {openWakilPresiden && (
                 <Popper
                   id={idWakilPresiden}
