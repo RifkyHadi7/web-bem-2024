@@ -33,15 +33,14 @@ const Sambutan = () => {
 
   const idPresiden = openPresiden ? 'presiden-popper' : undefined;
   const idWakilPresiden = openWakilPresiden ? 'wakil-presiden-popper' : undefined;
-  const longText = `Puji dan syukur kita panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan karunia-Nya yang selalu menyertai perjuangan kami. BEM FILKOM UB 2024 Kabinet Arthakara hadir bagaikan pena yang siap mengukir cerita pada setiap lembaran, dengan tekad untuk memberikan sumbangsih demi kebermanfaatan yang berkelanjutan.
-
-Kami menjalankan kewajiban dari aspek Pengembangan, Pelayanan, Pengabdian, dan Pergerakan, yang menjadi identitas kami dalam mempertahankan nilai vital sebuah organisasi eksekutif. Dengan semangat dan partisipasi dari seluruh anggota KBMFILKOM, kami hadir untuk membawa perubahan positif dan inovasi dalam setiap langkah yang kami ambil.
-
-Melalui kebersamaan, kami menghadapi setiap rintangan, menciptakan solusi kreatif, dan memberikan kontribusi aktif demi mencapai tujuan dan harapan bersama. BEM FILKOM UB 2024 Kabinet Arthakara membutuhkan media untuk mendokumentasikan setiap aksi nyata kami. Untuk mengiringi perjalanan hingga akhir kisah, pada platform inilah BEM FILKOM UB 2024 yang akan menjadi museum dari setiap karya yang kami hadirkan.
-
-Kami mengucapkan terima kasih kepada seluruh pihak yang terlibat dan selalu mendukung kami, sang pembawa secercah harapan demi mensukseskan Fakultas Ilmu Komputer, Universitas Brawijaya, dan Indonesia. 
-
-SATU HATI SATU JIWA FILKOM! 
+  const longText = `
+Puji dan syukur kita panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan karunia-Nya yang selalu menyertai perjuangan kami. BEM FILKOM UB 2024 Kabinet Arthakara hadir bagaikan pena yang siap mengukir cerita pada setiap lembaran, dengan tekad untuk memberikan sumbangsih demi kebermanfaatan yang berkelanjutan. Kami menjalankan kewajiban dari aspek Pengembangan, Pelayanan, Pengabdian, dan Pergerakan, yang menjadi identitas kami dalam mempertahankan nilai vital sebuah organisasi eksekutif.
+  
+Dengan semangat dan partisipasi dari seluruh anggota KBMFILKOM, kami hadir untuk membawa perubahan positif dan inovasi dalam setiap langkah yang kami ambil. Melalui kebersamaan, kami menghadapi setiap rintangan, menciptakan solusi kreatif, dan memberikan kontribusi aktif demi mencapai tujuan dan harapan bersama.
+  
+BEM FILKOM UB 2024 Kabinet Arthakara membutuhkan media untuk mendokumentasikan setiap aksi nyata kami. Untuk mengiringi perjalanan hingga akhir kisah, pada platform inilah BEM FILKOM UB 2024 yang akan menjadi museum dari setiap karya yang kami hadirkan. Kami mengucapkan terima kasih kepada seluruh pihak yang terlibat dan selalu mendukung kami, sang pembawa secercah harapan demi mensukseskan Fakultas Ilmu Komputer, Universitas Brawijaya, dan Indonesia.
+  
+SATU HATI SATU JIWA FILKOM!
 
 Wassalamualaikum Warahmatullahi Wabarakatuh....
 
@@ -188,7 +187,6 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               }}>
               <span className="font-extrabold text-cust-black whitespace-">Assalamualaikum Warahmatullahi Wabarakatuh, Shalom, Om Swastyastu, Namo Buddhaya, Salam Kebajikan Bagi Kita Semua.</span>
               <br />
-              <br />
               {/* <ReadMoreReact
                 min={100}
                 ideal={200}
@@ -208,7 +206,6 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               </ReactReadMoreReadLess>
               </div>
               
-              <br />
               <br />
               <span className="font-extrabold text-cust-black">BEM FILKOM UB 2024</span>
             </motion.div>
