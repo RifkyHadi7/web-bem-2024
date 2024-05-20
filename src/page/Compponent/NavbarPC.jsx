@@ -7,7 +7,7 @@ import NotFound from "../NotFound";
 import Tentang from "../Tentangpage";
 import { Link } from 'react-router-dom';
 
-const Dropdown = ({ items }) => {
+const Dropdown = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,10 +21,10 @@ const Dropdown = ({ items }) => {
         onClick={toggleMenu}
         className="hover:text-cust-orange font-Lato text-white text-lg pl-8"
       >
-        Kabinet <FontAwesomeIcon icon={faAngleDown} />
+        {title} <FontAwesomeIcon icon={faAngleDown} />
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-100 max-h-36 overflow-y-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+        <div className="absolute right-0 mt-0 w-100 max-h-36 overflow-y-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 options">
           <div className="bg-[#FDFADB] py-1 rounded-md">
             {items.map((item, index) => (
               <button
@@ -32,7 +32,9 @@ const Dropdown = ({ items }) => {
                 type="button"
                 className="hover:text-cust-orange hover:font-bold w-full text-nowrap hover:bg-cust-bg-orange font-lato text-gray-700 block px-4 py-2 text-sm"
               >
-                {item}
+               <Link to={"/comingsoon"}>
+               {item}
+               </Link> 
               </button>
             ))}
           </div>
@@ -50,6 +52,7 @@ const Navbar = () => {
   ];
   const kabarItems = ["KABAR FILKOM", "KABAR PROKER"];
   const appsItems = ["SJW FILKOM", "SIPERAT", "IT PARTNERSHIP"];
+  const comingsoon = ["Selengkapnya"];
 
   return (
     <header className="bg-cust-green" style={{ backgroundImage: `url(${background})` }}>
@@ -63,9 +66,9 @@ const Navbar = () => {
         <button type="button"  className="hover:text-cust-orange font-Lato text-white text-lg pl-8">
         <Link to="/tentang">Tentang</Link>
         </button>
-        <Dropdown items={<NotFound/>} />
-        <Dropdown items={<NotFound/>} />
-        <Dropdown items={<NotFound/>} />
+        <Dropdown title={"Kabinet"} items={comingsoon} />
+        <Dropdown title={"Kabar"} items={comingsoon} />
+        <Dropdown title={"Apps"} items={comingsoon} />
         {/* <Dropdown items={kabinetItems} />
         <Dropdown items={kabarItems} />
         <Dropdown items={appsItems} /> */}

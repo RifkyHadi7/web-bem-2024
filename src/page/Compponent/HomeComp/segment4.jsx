@@ -102,8 +102,8 @@ const sponsorItems = [
   
   return (
     <div className="box-border bg-cust-yellow pb-20" style={{ backgroundImage: `url(${background})` }}>
-      <img src={Partner} alt="Partner" className="mx-auto w-[20rem] xl:w-[50rem] pt-20" />
-      <div className="mb-12 text-[#929292] text-2xl">
+      <img src={Partner} alt="Partner" className="mx-auto w-[30rem] xl:w-[50rem] pt-20" />
+      <div className="mb-12 text-[#929292] xl:text-2xl text-xl">
         Klik untuk melihat benefitnya &gt;_&lt;
       </div>
       <Marquee direction="right" autoFill={true} className="mb-10">
