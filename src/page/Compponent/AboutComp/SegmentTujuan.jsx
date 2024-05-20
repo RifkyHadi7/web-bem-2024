@@ -28,15 +28,39 @@ const SegmentTujuan = () => {
           />
         </div>
         <div className="lg:text-start mt-4 lg:mt-0 lg:ml-4 lg:basis-1/2 text-center pb-10">
-          <div className="font-lato font-extrabold text-[50px] pt-10 text-cust-green pr-4 sm:pr-0 lg:text-start lg:pl-4  outline-cust-green">
-            BEM FILKOM UB
-          </div>
-          <div className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-0 font-lato mb-10 lg:text-[20px] text-[16px] pl-4 text-cust-black">
+        <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 3.0,
+                damping: 15,
+                stiffness: 50,
+              },
+            }}
+          className="font-lato font-extrabold text-[50px] pt-10 text-cust-green pr-4 sm:pr-0 lg:text-start lg:pl-4  outline-cust-green">
+           BEM FILKOM UB
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 3.0,
+                damping: 15,
+                stiffness: 50,
+              },
+            }}
+          className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-0 font-lato mb-10 lg:text-[20px] text-[16px] pl-4 text-cust-black lg:mb-40">
             BEM FILKOM UB merupakan badan eksekutif yang memiliki 4 fungsi utama dalam membantu mahasiswa FILKOM UB berproses, diantaranya ialah pelayanan khususnya dibidang advokasi dan kesejahteraan mahasiswa, pengembangan khususnya dalam mengembangkan soft skill serta minat bakat mahasiswa, pengabdian dalam mengamalkan salah satu Tri Dharma Perguruan Tinggi, dan pergerakan yang mewadahi mahasiswa untuk bertindak sebagai inisiator dalam mengawal isu yang beredar.
-          </div>
+          
+          </motion.div>
         </div>
       </div>
-          <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715483597/Group_1949_a5bsty.png" alt="awan" className="mt-24"/>
     </div>
   );
 };
