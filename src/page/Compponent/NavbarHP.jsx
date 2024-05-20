@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import LogoHP from "../../assets/LogoNavbarHP.svg";
+import background from "../../assets/bgcorak.svg";
+import LogoHP from "../../assets/LogoHP.png";
 import Logo from "../../assets/LogoNavbar.svg";
 import { IoMdMenu, IoMdClose, IoMdArrowDropdown } from "react-icons/io";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -22,7 +23,7 @@ const NavbarHP = () => {
 
   return (
     <div>
-      <div className='justify-between w-full flex'>
+      <div className='justify-between w-full flex bg-cust-green w- shadow-3xl shadow-black' style={{ backgroundImage: `url(${background})` }}>
         <div>
           <img src={Logo} alt="logo BEM" className='w-3/4' />
         </div>
@@ -33,11 +34,11 @@ const NavbarHP = () => {
         </div>
       </div>
       {isOpen &&
-        <div className='fixed top-0 left-0 bg-cust-yellow font-lato w-1/4 z-50 h-screen pb-5 overflow-y-auto text-md'>
+        <div className='fixed top-0 left-0 bg-cust-yellow font-lato w-2/3 z-50 h-screen pl-3 pb-5 overflow-y-auto text-md'>
           <div className='flex justify-between w-full mb-5'>
-            <img onClick={toggleMenu} src={LogoHP} alt="" style={{ fontSize: '35px' }} />
+            <img onClick={toggleMenu} src={LogoHP} alt="" className='w-2/3'/>
             <button className='h-full' onClick={toggleMenu} type='button'>
-              <IoMdClose style={{ fontSize: '35px' }} className='mr-3 text-cust-gray ' />
+              <IoMdClose style={{ fontSize: '35px' }} className='mr-3 mt-1 text-cust-gray ' />
             </button>
           </div>
           <div className='text-cust-gray w-3/4 font-lato space-y-4 font-bold'>
@@ -63,7 +64,7 @@ const NavbarHP = () => {
               "MEDINKRAF", "ADKEU", "PIT"
             ]} isOpen={dropdownOpen} toggleDropdown={toggleDropdown} />
             <Dropdown title="Apps" items={["SJW FILKOM", "SIPERAT", "IT PARTNERSHIP"]} isOpen={dropdownOpen} toggleDropdown={toggleDropdown} /> */}
-          <button className='w-1/2 hover:bg-cust-orange hover:text-cust-white ml-3 px-3 pt-1 font-normal flex h-10 w-full justify-between ring-1 ring-cust-orange hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-cust-orange focus:outline-cust-orange hover:bg-cust-bg-orange2 text-cust-orange text-lg rounded-full'>
+          <button className='w-32 hover:bg-cust-orange hover:text-cust-white px-3 pt-1 font-normal flex h-10 justify-between ring-1 ring-cust-orange hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-cust-orange focus:outline-cust-orange text-cust-orange text-lg rounded-full'>
             Event 
             <FaLongArrowAltRight style={{fontSize: '25px'}} className='mt-0.5'/>
           </button>

@@ -40,10 +40,10 @@ const ArahGerakComponent = () => (
     <div className="lg:grid lg:grid-cols-10 flex flex-col">
   <div className="flex flex-col items-center mx-6 mb-10 lg:col-span-4 lg:-mr-10 lg:ml-10"> 
     <div className="flex justify-center ">
-      <img src={ArahGerak} alt="Arah Gerak" className="lg:w-full w-[200px] mb-5" />
+      <img src={ArahGerak} alt="Arah Gerak" className="lg:w-full w-[250px] mb-5" />
     </div>
     {items.map((item, index) => (
-      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-5 lg:w-full lg:py-3 w-full py-3">
+      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
         <p className="text-center font-lato text-cust-white lg:text-[20px] text-[14px] font-semibold">{item}</p>
       </div>
     ))}
@@ -55,10 +55,10 @@ const ArahGerakComponent = () => (
 
   <div className="flex flex-col items-center mx-6 mb-10 lg:col-span-4 lg:mr-10 lg:-ml-10">
     <div className="flex justify-center ">
-      <img src={BudayaKerja} alt="Budaya Kerja" className="lg:w-full w-[200px] mb-5" />     
+      <img src={BudayaKerja} alt="Budaya Kerja" className="lg:w-full w-[250px] mb-5" />
     </div>
     {items2.map((item, index) => (
-      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-5 lg:w-full lg:py-3 w-full py-3">
+      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
         <p className="text-center font-lato text-cust-white lg:text-[20px] text-[14px] font-semibold ">{item}</p>
       </div>
     ))}

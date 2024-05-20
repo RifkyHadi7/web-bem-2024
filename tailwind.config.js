@@ -11,6 +11,9 @@ module.exports = {
       xxl: '1300px',
     },
     extend: {
+      boxShadow: {
+        '3xl': '0 35px 50px -20px rgba(0, 0, 0, 0.1)',
+      },
       fontFamily: {
         'lato': ["Lato", "sans-serif"],
         'poppins': ["Poppins", "sans-serif"],

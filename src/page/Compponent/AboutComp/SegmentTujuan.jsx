@@ -27,7 +27,7 @@ const SegmentTujuan = () => {
             className="lg:w-[350px] mx-auto mt-auto sm:w-[300px] w-[250px]"
           />
         </div>
-        <div className="lg:text-start mt-4 lg:mt-0 lg:ml-4 lg:basis-1/2 text-center pb-10">
+        <div className="lg:text-start mt-4 lg:mt-0 lg:ml-4 lg:basis-1/2 mx-7 text-center pb-10">
         <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{
@@ -40,7 +40,7 @@ const SegmentTujuan = () => {
                 stiffness: 50,
               },
             }}
-          className="font-lato font-extrabold text-[50px] pt-10 text-cust-green pr-4 sm:pr-0 lg:text-start lg:pl-4  outline-cust-green">
+          className="font-lato font-extrabold text-3xl lg:text-[50px] pt-10 pb-4 text-cust-green pr-4 sm:pr-0 text-start pl-4 outline-cust-green">
            BEM FILKOM UB
           </motion.div>
           <motion.div

@@ -7,7 +7,7 @@ const Segment1 = () => {
   return (
     <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <div className="lg:flex-start lg:justify-start font-lato h-full pt-[80px] lg:pt-[80px] lg:pl-[50px]">
-        <div className="lg:mt-[60px] lg:mx-auto text-start pb-[70px] sm:pb-[50px] ml-[10px] sm:ml-[20px]">
+        <div className="lg:mt-[60px] lg:mx-auto lg:text-start pb-[70px] sm:pb-[50px] ml-[10px] sm:ml-[20px]">
         <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{
