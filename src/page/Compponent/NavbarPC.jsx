@@ -55,7 +55,7 @@ const Navbar = () => {
   const comingsoon = ["Selengkapnya"];
 
   return (
-    <header className="bg-cust-green" style={{ backgroundImage: `url(${background})` }}>
+    <header className="bg-cust-green w-" style={{ backgroundImage: `url(${background})` }}>
       <div className="flex pl-6 items-center">
         <a href="/" className="mr-4">
           <img src={Logo} alt="BEM Logo"/>

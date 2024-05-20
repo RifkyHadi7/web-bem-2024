@@ -33,7 +33,7 @@ const NavbarHP = () => {
         </div>
       </div>
       {isOpen &&
-        <div className='bg-cust-yellow font-lato w-1/2 z-50 h-screen pb-5 overflow-y-auto text-md'>
+        <div className='fixed top-0 left-0 bg-cust-yellow font-lato w-1/4 z-50 h-screen pb-5 overflow-y-auto text-md'>
           <div className='flex justify-between w-full mb-5'>
             <img onClick={toggleMenu} src={LogoHP} alt="" style={{ fontSize: '35px' }} />
             <button className='h-full' onClick={toggleMenu} type='button'>
@@ -46,6 +46,15 @@ const NavbarHP = () => {
             </button>
             <button onClick={toggleMenu} className='text-left hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
             <Link to="/tentang">Tentang</Link>
+            </button>
+            <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
+            <Link className='flex' to="/comingsoon">Kabar <IoMdArrowDropdown style={{ fontSize: '25px' }} className='' /> </Link>
+            </button>
+            <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
+            <Link className='flex' to="/comingsoon">Kabinet <IoMdArrowDropdown style={{ fontSize: '25px' }} className='' /> </Link>
+            </button>
+            <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
+            <Link className='flex' to="/tentang">Apps <IoMdArrowDropdown style={{ fontSize: '25px' }} className='' /> </Link>
             </button>
             {/* <Dropdown  title="Kabar" items={["KABAR FILKOM", "KABAR PROKER"]} isOpen={dropdownOpen} toggleDropdown={toggleDropdown} />
             <Dropdown title="Kabinet" items={[
