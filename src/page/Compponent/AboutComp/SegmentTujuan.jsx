@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const SegmentTujuan = () => {
   return (
     <div
-      className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-cover pt-16"
+      className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-cover py-10"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="flex flex-col lg:flex-row">
@@ -24,7 +24,7 @@ const SegmentTujuan = () => {
               },
             }}
             src={logo}
-            className="lg:w-[350px] mx-auto mt-auto sm:w-[300px] w-[250px]"
+            className="lg:w-[350px] mx-auto mt-auto sm:w-[300px] w-[200px]"
           />
         </div>
         <div className="lg:text-start mt-4 lg:mt-0 lg:ml-4 lg:basis-1/2 mx-7 text-center pb-10">
@@ -55,7 +55,7 @@ const SegmentTujuan = () => {
                 stiffness: 50,
               },
             }}
-          className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-0 font-lato mb-10 lg:text-[20px] text-[16px] pl-4 text-cust-black lg:mb-40">
+          className="text-justify lg:pr-6 lg:mr-20 pr-4 sm:pr-0 font-lato mb-20 lg:text-[20px] text-[16px] pl-4 text-cust-black lg:mb-40">
             BEM FILKOM UB merupakan badan eksekutif yang memiliki 4 fungsi utama dalam membantu mahasiswa FILKOM UB berproses, diantaranya ialah pelayanan khususnya dibidang advokasi dan kesejahteraan mahasiswa, pengembangan khususnya dalam mengembangkan soft skill serta minat bakat mahasiswa, pengabdian dalam mengamalkan salah satu Tri Dharma Perguruan Tinggi, dan pergerakan yang mewadahi mahasiswa untuk bertindak sebagai inisiator dalam mengawal isu yang beredar.
           
           </motion.div>

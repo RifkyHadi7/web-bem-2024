@@ -23,7 +23,7 @@ const NavbarHP = () => {
 
   return (
     <div>
-      <div className='justify-between w-full flex bg-cust-green w- shadow-3xl shadow-black' style={{ backgroundImage: `url(${background})` }}>
+      <div className='justify-between w-full flex bg-cust-green w- ' style={{ backgroundImage: `url(${background})` }}>
         <div>
           <img src={Logo} alt="logo BEM" className='w-3/4' />
         </div>

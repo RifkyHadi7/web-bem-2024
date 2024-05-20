@@ -23,7 +23,7 @@ const Welcome = () => {
           alt="MissingIMG"
         />
       </Atropos>
-      <div className="lg:flex lg:justify-center font-lato h-full pt-[170px] lg:pt-[150px]">
+      <div className="lg:flex lg:justify-center font-lato h-full py-[50px] lg:pt-[150px]">
         <div className="lg:mt-[60px] lg:mx-auto text-center pb-[70px] sm:pb-[50px] ml-[10px] sm:ml-[20px]">
           <motion.div
             initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ const Welcome = () => {
         </div>
       </div>
       <div>
-        <img src={awanKrem} className="" alt="awanKrem" />
+        <img src={awanKrem} className="-mb-1 lg:mb-0" alt="awanKrem" />
       </div>
     </div>
   );
