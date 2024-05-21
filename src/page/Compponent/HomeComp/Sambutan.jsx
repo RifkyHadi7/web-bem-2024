@@ -46,7 +46,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
 
 `;
   return (
-    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] lg:bg-cover" style={{ backgroundImage: `url(${background})` }}>
+    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-contain lg:bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <div className="cust-container pb-20">
         <div className="lg:grid flex-col lg:grid-cols-4 lg:gap-2 py-10">
           <div className="col-span-full flex flex-col items-center">

@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../../assets/welcoming.svg";
+import background from "../../../assets/bgcorak.svg";
 import gedung from "../../../assets/gedungFilkom.png";
 import arthakaraBubble from "../../../assets/arthakaraBubble.png";
 import awanKrem from "../../../assets/awanKrem.png";
@@ -8,7 +8,7 @@ import Atropos from "atropos/react";
 
 const Welcome = () => {
   return (
-    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] py-2 bg-cover" style={{ backgroundImage: `url(${background})` }}>
+    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] bg-cust-green lg:bg-[0px] bg-contain lg:bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <Atropos
         shadow={true}
         shadowOffset={50}
@@ -36,7 +36,7 @@ const Welcome = () => {
                 stiffness: 50,
               },
             }}
-            className="text-cust-white text-[20px] sm:text-[35px] md:w-full lg:text-start lg:text-[30px] font-regular"
+            className="text-cust-white text-[20px] sm:text-[35px] md:w-full lg:text-start lg:text-[30px] pt-5 lg:pt-0 font-regular"
           >
             Selamat datang di
           </motion.div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import background from "../../assets/bgcorak.svg";
+import background from "../../assets/corakbackground.svg";
 import LogoHP from "../../assets/LogoHP.png";
 import Logo from "../../assets/LogoNavbar.svg";
 import { IoMdMenu, IoMdClose, IoMdArrowDropdown } from "react-icons/io";
