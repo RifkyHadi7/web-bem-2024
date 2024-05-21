@@ -48,9 +48,9 @@ const NavbarHP = () => {
             <button onClick={toggleMenu} className='text-left hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
             <Link to="/tentang">Tentang</Link>
             </button>
-            <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
+            {/* <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
             <Link className='flex' to="/comingsoon">Kabar <IoMdArrowDropdown style={{ fontSize: '25px' }} className='' /> </Link>
-            </button>
+            </button> */}
             <button onClick={toggleMenu} className='text-left flex hover:bg-orange-200 hover:text-cust-orange pl-3 w-full'>
             <Link className='flex' to="/comingsoon">Kabinet <IoMdArrowDropdown style={{ fontSize: '25px' }} className='' /> </Link>
             </button>
