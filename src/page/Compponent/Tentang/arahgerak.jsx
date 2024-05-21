@@ -25,13 +25,17 @@ const items2 = [
 const ArahGerakComponent = () => (
     
   <div className="bg-cust-yellow h-max">
-    <div className='flex w-100'>
-        <div className='flex flex-row w-full justify-between'>
-        <img src={DaunKiri} alt="" className='lg:w-64 lg:h-64 jutify-start h-32'/>
+    <div className='flex w-full pt-10'>
+        <div className='justify-start'>
+        <img src={DaunKiri} alt="" className='lg:w-64 lg:h-64 jutify-start h-28'/>
 
         </div>
-        <div className=' pr-0 justify-end'>
-        <img src={DaunKanan} alt="" className='lg:w-64 lg:h-64 justify-end h-32'/>
+        <div className='w-1/2 lg:w-2/3 justify-between'>
+        
+
+        </div>
+        <div className='justify-end'>
+        <img src={DaunKanan} alt="" className='lg:w-64 lg:h-64 justify-end h-28'/>
 
         </div>
         

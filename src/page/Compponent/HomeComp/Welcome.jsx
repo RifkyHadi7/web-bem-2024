@@ -24,7 +24,7 @@ const Welcome = () => {
         />
       </Atropos>
       <div className="lg:flex lg:justify-center font-lato h-full py-[50px] lg:pt-[150px]">
-        <div className="lg:mt-[60px] lg:mx-auto text-center pb-[70px] sm:pb-[50px] ml-[10px] sm:ml-[20px]">
+        <div className="lg:mt-[60px] lg:mx-auto text-center lg:py-0 py-[50px] ml-[10px] sm:ml-[20px]">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{
@@ -36,7 +36,7 @@ const Welcome = () => {
                 stiffness: 50,
               },
             }}
-            className="text-cust-white text-[20px] sm:text-[35px] md:w-full lg:text-start lg:text-[30px] pt-5 lg:pt-0 font-regular"
+            className="text-cust-white text-[20px] sm:text-[35px] md:w-full lg:text-start lg:text-[30px] pt-6 lg:pt-0 font-regular"
           >
             Selamat datang di
           </motion.div>
