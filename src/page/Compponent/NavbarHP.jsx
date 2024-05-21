@@ -23,7 +23,7 @@ const NavbarHP = () => {
 
   return (
     <div>
-      <div className='justify-between w-full flex bg-cust-green w- ' style={{ backgroundImage: `url(${background})` }}>
+      <div className='justify-between w-full flex bg-cust-green w- pl-2 py-1' style={{ backgroundImage: `url(${background})` }}>
         <div>
           <img src={Logo} alt="logo BEM" className='w-3/4' />
         </div>
@@ -35,7 +35,7 @@ const NavbarHP = () => {
       </div>
       {isOpen &&
         <div className='fixed top-0 left-0 bg-cust-yellow font-lato w-2/3 z-50 h-screen pl-3 pb-5 overflow-y-auto text-md'>
-          <div className='flex justify-between w-full mb-5'>
+          <div className='flex justify-between w-full mb-5 py-1'>
             <img onClick={toggleMenu} src={LogoHP} alt="" className='w-2/3'/>
             <button className='h-full' onClick={toggleMenu} type='button'>
               <IoMdClose style={{ fontSize: '35px' }} className='mr-3 mt-1 text-cust-gray ' />

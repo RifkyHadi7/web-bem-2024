@@ -8,7 +8,7 @@ import Atropos from "atropos/react";
 
 const Welcome = () => {
   return (
-    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] bg-cover" style={{ backgroundImage: `url(${background})` }}>
+    <div className="overflow-hidden w-full h-full bg-[-100px] sm:bg-[-100px] md:bg-[0px] lg:bg-[0px] py-2 bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <Atropos
         shadow={true}
         shadowOffset={50}
