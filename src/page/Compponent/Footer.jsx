@@ -32,13 +32,13 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col text-center px-0 lg:px-5 pt-10 lg:w-2/4 lg:pt-0 lg:pl-10">
-              <h3 className="text-cust-white text-3xl  font-bold mb-5">
+              <h3 className="text-cust-white text-2xl lg:text-3xl font-bold mb-5">
                 Sekretariat
               </h3>
-              <p className="text-2xl font-light">Gedung Kreativitas Mahasiswa Lt 2</p>
-              <p className="text-2xl font-light">Fakultas Ilmu Komputer UB</p>
-              <p className="text-2xl font-light">Jalan Veteran Nomor 8, Lowokwaru, Malang</p>
-              <p className="text-2xl font-light">Email : bemfilkom@ub.ac.id</p>
+              <p className="text-xl lg:text-2xl font-light">Gedung Kreativitas Mahasiswa Lt 2</p>
+              <p className="text-xl lg:text-2xl font-light">Fakultas Ilmu Komputer UB</p>
+              <p className="text-xl lg:text-2xl font-light">Jalan Veteran Nomor 8, Lowokwaru, Malang</p>
+              <p className="text-xl lg:text-2xl font-light">Email : bemfilkom@ub.ac.id</p>
               <div className="flex flex-wrap flex-row justify-center pb-24 pt-10">
                 <Link to="http://www.instagram.com/bemfilkomub/" target="_blank"
                 >
@@ -74,20 +74,20 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col text-center pt-10 lg:text-right lg:w-1/4 lg:pt-0 lg:mr-10 lg:pr-8 gap-3">
-              <h3 className="text-cust-white font-semibold mb-3 text-3xl">
+              <h3 className="text-cust-white font-semibold mb-3 text-2xl lg:text-3xl">
                 Tautan Terkait
               </h3>
               <a
                 href="https://filkom.ub.ac.id/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 FILKOM UB
               </a>
               <a
                 href="https://bemfilkom.ub.ac.id/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 Nawasena 2023
               </a>
@@ -95,28 +95,28 @@ const Footer = () => {
               <a
                 href="https://bemfilkom.ub.ac.id/2022/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 Aryakarsa 2022
               </a>
               <a
                 href="https://bemfilkom.ub.ac.id/2021/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 Mozaik Asa 2021
               </a>
               <a
                 href="https://bemfilkom.ub.ac.id/2020/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 Elaborasi Makna 2020
               </a>
               <a
                 href="https://bemfilkom.ub.ac.id/2019/"
                 target="_blank"
-                className="hover:underline text-2xl font-light hover:font-normal"
+                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
               >
                 Atmabara 2019
               </a>

@@ -64,7 +64,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
                   },
                 }}
                 src={sambutan}
-                className="mx-auto w-full"
+                className="mx-auto w-5/6 lg:w-full"
               />
             </div>
             <motion.img

@@ -94,16 +94,16 @@ export default function CarouselCard() {
                 <img src={bgArtikelPC} alt="" className="hidden xl:flex h-max" />
                 <img src={bgArtikelHP} alt="" className="xl:hidden " />
                 {/*    <!-- Slides --> */}
-                <div className="glide-04 absolute w-full flex flex-col py-6 h-max xl:top-0 top-14">
+                <div className="glide-04 absolute w-full flexflex-col py-6 h-max xl:top-0 top-14">
                     {/* tittle */}
                     <div className='w-full flex h-max relative justify-center top-8 xl:top-7'>
                         <img src={ArtikelTittle} alt="" className='absolute w-[20rem] mx-auto text-4xl xl:text-7xl xl:pt-36  xl:w-[43rem]' />
                     </div>
                     {/* slides */}
                     <div className="overflow-hidden relative top-28 mx-8 xl:top-96" data-glide-el="track">
-                        <ul className=" flex flex-wrap  w-full mx-1 overflow-hidden">
+                        <ul className=" flex flex-wrap md:justify-center w-full overflow-hidden">
                             {cards.map((card, index) => (
-                                <li key={card.id} className={`flex justify-center gap-6 xl:gap-28 ${cardsPerSlide > 3 ? 'grid grid-cols-2' : ''}`}>
+                                <li key={card.id} className={`flex place-items-center my-3 gap-6 xl:gap-28 ${cardsPerSlide > 3 ? 'grid grid-cols-2' : ''}`}>
                                     {[...Array(cardsPerSlide)].map((_, i) => (
                                         <CardContent key={i} card={card} />
                                     ))}

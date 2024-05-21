@@ -101,7 +101,7 @@ const sponsorItems = [
   };
   
   return (
-    <div className="box-border bg-cust-yellow pb-20" style={{ backgroundImage: `url(${background})` }}>
+    <div className="box-border bg-cust-yellow pb-20 bg-contain lg:bg-cover" style={{ backgroundImage: `url(${background})` }}>
       <img src="https://res.cloudinary.com/dq11ayv02/image/upload/v1716217808/web-bem-2024/partner.png" alt="Partner" className="mx-auto w-[10rem] xl:w-[15rem] pt-20 pb-10" />
       <div className="mb-12 text-[#929292] xl:text-2xl text-xl">
         Klik untuk melihat benefitnya &gt;_&lt;
