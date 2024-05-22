@@ -9,6 +9,7 @@ import Maknaburung11 from '../../../assets/Maknaburung11.png'
 import Maknasayap12 from '../../../assets/Maknasayap12.png'
 import Maknaekor21 from '../../../assets/Maknaekor21.png'
 import Maknalingkaran22 from '../../../assets/Maknalingkaran22.png'
+import { motion } from "framer-motion";
 
 const SegmentFiloLogo = () => {
   return (
@@ -16,7 +17,18 @@ const SegmentFiloLogo = () => {
         <div className='w-screen lg:w-full h-full mt-16 lg:mt-32 px-0'>
             <div className='flex flex-row w-full justify-between'>
                 <img src={BingkaiPutihKiri} alt="" className='w-[20vw] lg:w-64'/>
-                <img src={HeadFiloLogo} alt="" className='-ml-[10vw] w-[70vw] lg:w-[664px] pt-12'/>
+                <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }} src={HeadFiloLogo} alt="" className='-ml-[10vw] w-[70vw] lg:w-[664px] pt-12'/>
                 <img src={BingkaiPutihKanan} alt="" className='-ml-[10vw] w-[20vw] lg:w-64' />
             </div>
         </div>

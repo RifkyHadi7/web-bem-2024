@@ -93,7 +93,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
             >
               Presiden
             </button>
-            <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-9px] lg:ml-[160px] " />
+            <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-9px] lg:ml-[160px]" />
             <img src={isPictureDownPresiden ? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:mt-[-14px] lg:ml-[204px]" />
             {openPresiden && (
               <Popper
@@ -137,8 +137,8 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               >
                 Wakil Presiden
               </button>
-              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] lg:ml-[120px]"/>
-              <img src={isPictureDownWakilPresiden? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:ml-[160px]"/>
+              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] lg:ml-[113px]"/>
+              <img src={isPictureDownWakilPresiden? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:ml-[155px]"/>
               {openWakilPresiden && (
                 <Popper
                   id={idWakilPresiden}
@@ -173,7 +173,7 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
           </div>
 
           <div className="mt-10 text-justify mx-auto col-span-2 px-8 text-[16px] lg:text-[20px] font-lato text-cust-black">
-            <motion.div
+          <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
                 opacity: 1,

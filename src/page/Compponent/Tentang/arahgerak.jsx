@@ -4,6 +4,7 @@ import Linemid from '../../../assets/LineArah.svg';
 import BudayaKerja from '../../../assets/BudayaKerja.svg';
 import DaunKiri from '../../../assets/daunKiri.png';
 import DaunKanan from '../../../assets/daunKanan.png';
+import { motion } from "framer-motion";
 
 
 const items = [
@@ -44,12 +45,34 @@ const ArahGerakComponent = () => (
     <div className="lg:grid lg:grid-cols-10 flex flex-col">
   <div className="flex flex-col items-center mx-6 mb-10 lg:col-span-4 lg:-mr-10 lg:ml-10"> 
     <div className="flex justify-center ">
-      <img src={ArahGerak} alt="Arah Gerak" className="lg:w-full w-[250px] mb-5" />
+    <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }}  src={ArahGerak} alt="Arah Gerak" className="lg:w-full w-[250px] mb-5" />
     </div>
     {items.map((item, index) => (
-      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
+       <motion.div
+       initial={{ opacity: 0}}
+       whileInView={{
+         opacity: 1,
+         x: 0,
+         transition: {
+           type: "spring",
+           duration: 4.0,
+           damping: 15,
+           stiffness: 50,
+         },
+       }} key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
         <p className="text-center font-lato text-cust-white lg:text-[20px] text-[14px] font-semibold">{item}</p>
-      </div>
+        </motion.div>
     ))}
   </div>
   
@@ -59,12 +82,34 @@ const ArahGerakComponent = () => (
 
   <div className="flex flex-col items-center mx-6 mb-10 lg:col-span-4 lg:mr-10 lg:-ml-10">
     <div className="flex justify-center ">
-      <img src={BudayaKerja} alt="Budaya Kerja" className="lg:w-full w-[250px] mb-5" />
+    <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }} src={BudayaKerja} alt="Budaya Kerja" className="lg:w-full w-[250px] mb-5" />
     </div>
     {items2.map((item, index) => (
-      <div key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
+       <motion.div
+       initial={{ opacity: 0}}
+       whileInView={{
+         opacity: 1,
+         x: 0,
+         transition: {
+           type: "spring",
+           duration: 4.0,
+           damping: 15,
+           stiffness: 50,
+         },
+       }}  key={index} className="flex justify-center box-border bg-cust-orange rounded-full my-2 lg:my-5 lg:w-full py-3 w-full">
         <p className="text-center font-lato text-cust-white lg:text-[20px] text-[14px] font-semibold ">{item}</p>
-      </div>
+        </motion.div>
     ))}
   </div>
 </div>

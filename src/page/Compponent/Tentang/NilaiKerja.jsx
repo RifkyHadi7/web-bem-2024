@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../../../assets/bgcorak.svg";
 import Nilaikerja from "../../../assets/NilaiKerja.svg";
-import awan from '../../../assets/awanKrem.png';
+import { motion } from "framer-motion";
 
 export default function NilaiKerja() {
   return (
@@ -9,10 +9,32 @@ export default function NilaiKerja() {
       className="bg-cust-green flex flex-col justify-center items-center lg:py-10 lg:px-20 mx-auto "
       style={{ backgroundImage: `url(${background})` }}
     >
-      <img src={Nilaikerja} alt="" className="mb-10 w-[250px] mt-10 lg:mx-auto lg:w-[25rem]"  />
+      <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }} src={Nilaikerja} alt="" className="mb-10 w-[250px] mt-10 lg:mx-auto lg:w-[25rem]"  />
 
       <div className="mb-7 ">
-        <div className="lg:grid lg:grid-cols-2 flex-col lg:mb-10 font-semibold text-[14px] lg:text-[20px] px-4">
+      <motion.div
+       initial={{ opacity: 0}}
+       whileInView={{
+         opacity: 1,
+         x: 0,
+         transition: {
+           type: "spring",
+           duration: 4.0,
+           damping: 15,
+           stiffness: 50,
+         },
+       }}  className="lg:grid lg:grid-cols-2 flex-col lg:mb-10 font-semibold text-[14px] lg:text-[20px] px-4">
           <Box1
             title="KOLABORASI"
             description="Sebagai bentuk kerja sama dari segala unsur yang saling mendukung dan menjalankan tujuan untuk FILKOM lebih baik."
@@ -21,8 +43,19 @@ export default function NilaiKerja() {
             title="AKSELERASI"
             description="Percepatan birokrasi dan administrasi sebagai langkah awal kesuksesan dan keberlangsungan lembaga."
           />
-        </div>
-          <div className="lg:grid lg:grid-cols-2 lg:px-auto flex-col lg:mb-10 font-semibold text-[14px] lg:text-[20px] px-3">
+          </motion.div>
+          <motion.div
+       initial={{ opacity: 0}}
+       whileInView={{
+         opacity: 1,
+         x: 0,
+         transition: {
+           type: "spring",
+           duration: 4.0,
+           damping: 15,
+           stiffness: 50,
+         },
+       }}  className="lg:grid lg:grid-cols-2 lg:px-auto flex-col lg:mb-10 font-semibold text-[14px] lg:text-[20px] px-3">
             <Box2
               title="INTEGRASI"
               description="Tidak hanya bersama namun dengan bersinergi memiliki tujuan dan cita cita yang sama."
@@ -31,7 +64,7 @@ export default function NilaiKerja() {
               title="TRANSPARANSI"
               description="Kejelasan dan keterbukaan atas segala bagian."
             />
-          </div>
+          </motion.div>
       </div>
     </div>
   );

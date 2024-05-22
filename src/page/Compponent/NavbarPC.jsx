@@ -74,8 +74,8 @@ const Navbar = () => {
         <Dropdown items={kabarItems} />
         <Dropdown items={appsItems} /> */}
         <div>
-          <button className="ring-1 xxl:max-h-max max-h-10 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-3 xxl:px-10 rounded-full ml-48">
-            Event <FontAwesomeIcon className="mt-1" icon={faArrowRightLong} />
+          <button className="ring-1 xxl:max-h-max max-h-10 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-6 xl:px-10 rounded-full ml-48">
+            Event <FontAwesomeIcon className="mt-1 w-auto" icon={faArrowRightLong} />
           </button>
         </div>
       </div>

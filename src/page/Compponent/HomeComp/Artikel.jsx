@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import bgArtikelHP from '../../../assets/bgArtikelHP.png'
 import CardContent from "./CardContent";
+import { motion } from "framer-motion";
 
 export default function CarouselCard() {
 
@@ -97,7 +98,18 @@ export default function CarouselCard() {
                 <div className="glide-04 absolute w-full flexflex-col h-max xl:top-0 top-14">
                     {/* tittle */}
                     <div className='w-full flex h-max relative justify-center top-8 xl:top-7'>
-                        <img src={ArtikelTittle} alt="" className='absolute w-[20rem] mx-auto text-4xl xl:text-7xl xl:pt-36  xl:w-[43rem]' />
+                    <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }}src={ArtikelTittle} alt="" className='absolute w-[20rem] mx-auto text-4xl xl:text-7xl xl:pt-36  xl:w-[43rem]' />
                     </div>
                     {/* slides */}
                     <div className="overflow-hidden relative top-28 mx-8 xl:top-96" data-glide-el="track">

@@ -10,6 +10,7 @@ import Modal from "./Modal";
 import SponsorItem from "./SponsorItem";
 import React, { useState } from "react";
 import background from "../../../assets/bgcorak.svg";
+import { motion } from "framer-motion";
 
 const sponsorItems = [
     { 
@@ -102,7 +103,18 @@ const sponsorItems = [
   
   return (
     <div className="box-border bg-cust-yellow pb-20 bg-contain lg:bg-cover" style={{ backgroundImage: `url(${background})` }}>
-      <img src="https://res.cloudinary.com/dq11ayv02/image/upload/v1716217808/web-bem-2024/partner.png" alt="Partner" className="mx-auto w-[10rem] xl:w-[15rem] pt-20 pb-10" />
+        <motion.img
+                initial={{ opacity: 0, y: 50, x: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "ease",
+                    duration: 1.0,
+                    damping: 10,
+                    stiffness: 40,
+                  },
+                }} src="https://res.cloudinary.com/dq11ayv02/image/upload/v1716217808/web-bem-2024/partner.png" alt="Partner" className="mx-auto w-[10rem] xl:w-[15rem] pt-20 pb-10" />
       <div className="font-lato mb-12 text-[#929292] xl:text-2xl text-xl">
         Klik untuk melihat benefitnya &gt;_&lt;
       </div>
