@@ -1,11 +1,4 @@
 import Marquee from "react-fast-marquee";
-import Partner from "../../../assets/partner.svg";
-import sbucks from "../../../assets/SBUCKS-Partner.png";
-import shoescare from "../../../assets/shoescare-Partner.png";
-import otolaundry from "../../../assets/otolaundry-Partner.png";
-import nest from "../../../assets/nest-Partner.png";
-import gutenham from "../../../assets/gutenham-Partner.png";
-import caneyo from "../../../assets/caneyo-Partner.png";
 import Modal from "./Modal";
 import SponsorItem from "./SponsorItem";
 import React, { useState } from "react";
@@ -14,81 +7,71 @@ import { motion } from "framer-motion";
 
 const sponsorItems = [
     { 
-      imageSrc: sbucks, 
-      altText: "Starbucks", 
-      alamat: "Jl. Akordion Utara No.3d, Tunggulwulung", 
+      imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/WhatsApp_Image_2024-05-12_at_12.04.10_PM_1_wksf2t.jpg", 
+      altText: "Kopi Sisi Lain", 
+      alamat: "Jl Terusan Sudimoro 7A Sudimoro Lowokwaru Malang", 
       benefit: [
-        "Discount 10% (Milkbase)",
-        "Promo All Coffee 10k berlaku 24 jam",
-        "Promo bundling All Main Course + es teh 20k",
-        "Free 4 jam pertama penggunaan ruangan"
+        "Memberikan diskon all menu 10% pada Mahasiswa FILKOM UB",
       ],
       ketentuan: [
-        "KTM",
-        "Follow instagram @sobo.cafe",
-        "Follow tiktok @sobo_cafe"
+        "KTM FILKOM UB",
       ],
     },
-    { imageSrc: shoescare, altText: "Bar Shoescare", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung", 
+    { imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/Copy_of_Black_Logo_Gutenham_Coffee_House_udoxtk.png", altText: "Gutenham", alamat:"Jl. Mt Haryono 9 No.332, Dinoyo, Kec. Lowokwaru.", 
     benefit: [
-      "Discount 10% (Milkbase)",
-      "Promo All Coffee 10k berlaku 24 jam",
-      "Promo bundling All Main Course + es teh 20k",
-      "Free 4 jam pertama penggunaan ruangan"
+      "Diskon 10% tanpa minimal pembelian (untuk mahasiswa filkom)",
+      "Diskon 12% khusus  anggota BEM FILKOM",
+      "⁠Diskon 15% Minimal Pembelian 50.000 untuk seluruh mahasiswa FILKOM UB",
+      "Bebas biaya reservasi"
     ],
     ketentuan: [
-      "KTM",
-      "Follow instagram @sobo.cafe",
-      "Follow tiktok @sobo_cafe"
+      "KTM BEM FILKOM",
+      "10 Orang No Minimal Order, 15 Orang minimal Order 150K, 20 Orang Minimal Order 200k",
     ] },
-    { imageSrc: otolaundry, altText: "Oto Laundry", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung",
+    { imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/Untitled_design_vkttxr.png", altText: "Nine Clothing", alamat:"-",
     benefit: [
-      "Discount 10% (Milkbase)",
-      "Promo All Coffee 10k berlaku 24 jam",
-      "Promo bundling All Main Course + es teh 20k",
-      "Free 4 jam pertama penggunaan ruangan"
+      "Cashback 10% untuk pemesanan semua item",
     ],
     ketentuan: [
-      "KTM",
-      "Follow instagram @sobo.cafe",
-      "Follow tiktok @sobo_cafe"
+      "KTM FILKOM UB",
     ] },
-    { imageSrc: nest, altText: "Nest Cafe", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung", 
+    { imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/Logo_Alfath_Space_eauavo.png", altText: "Alfath Space", alamat: [
+      "Jl. Sunan Kalijaga No.35A, Dinoyo, Kec. Lowokwaru, Kota Malang ",
+    ],
     benefit: [
-      "Discount 10% (Milkbase)",
-      "Promo All Coffee 10k berlaku 24 jam",
-      "Promo bundling All Main Course + es teh 20k",
-      "Free 4 jam pertama penggunaan ruangan"
+      " Memberikan diskon All menu 10% pada mahasiswa FILKOM UB tanpa minimum pembelian",
+      " Memberikan diskon sewa ruangan 10% pada mahasiswa FILKOM UB dengan minimal penyewaan 3 jam",
+      "Memberikan diskon sewa ruangan 10% pada BEM FILKOM UB 2024 tanpa minimal jam"
     ],
     ketentuan: [
-      "KTM",
-      "Follow instagram @sobo.cafe",
-      "Follow tiktok @sobo_cafe"
+      "KTM FILKOM UB",
     ] },
-    { imageSrc: gutenham, altText: "Gutenham", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung", 
+    { imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/kirei_yfbt9o.png", altText: "Kirei Coffee", alamat:"Jl. Terusan Sudimoro, No. 18 Kota Malang.", 
     benefit: [
-      "Discount 10% (Milkbase)",
-      "Promo All Coffee 10k berlaku 24 jam",
-      "Promo bundling All Main Course + es teh 20k",
-      "Free 4 jam pertama penggunaan ruangan"
+      "Discount 10%",
     ],
     ketentuan: [
-      "KTM",
-      "Follow instagram @sobo.cafe",
-      "Follow tiktok @sobo_cafe"
+      "KTM FILKOM UB",
     ]},
-    { imageSrc: caneyo, altText: "Caneyo", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung", 
+    { imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478351/slide_1_chph4o.png", altText: "GOGIEGU", alamat:"Jl. Akordion Utara No.3d, Tunggulwulung", 
     benefit: [
-      "Discount 10% (Milkbase)",
-      "Promo All Coffee 10k berlaku 24 jam",
-      "Promo bundling All Main Course + es teh 20k",
-      "Free 4 jam pertama penggunaan ruangan"
+      "- Memberikan diskon seasonal khusus untuk mahasiswa FILKOM UB",
+      "Memberikan Cashback sebesar Rp. 1000,00 ke pihak BEM FILKOM UB",
     ],
     ketentuan: [
-      "KTM",
-      "Follow instagram @sobo.cafe",
-      "Follow tiktok @sobo_cafe"
-    ]}
+      "KTM FILKOM UB" ,
+    ]},
+    { 
+      imageSrc: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1716478352/selfroom_k7dtbn.jpg", 
+      altText: "Selfroom", 
+      alamat: "Jl. Manunggal No.A94, Mojolangu, Kec. Lowokwaru, Kota Malang, Jawa Timur 65142",
+      benefit: [
+        "Memberikan diskon all 10% pada Mahasiswa FILKOM UB",
+      ],
+      ketentuan: [
+        "KTM FILKOM UB",
+      ],
+    },
   ];
 
 
