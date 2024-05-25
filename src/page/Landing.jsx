@@ -9,6 +9,7 @@ import Artikel from "./Compponent/HomeComp/Artikel";
 import Company from "./Compponent/HomeComp/Companydown";
 import Value from "./Compponent/HomeComp/Valuemag";
 import Contoh from "./Compponent/HomeComp/Contoh";
+import Footer from "./Compponent/Footer";
 // import Sambutan from "./Compponent/HomeComp/Sambutan";
 
 
@@ -21,6 +22,7 @@ const Landing = () => {
     <Artikel/>
     <Contoh/>
     <Segment4 />
+    <Footer />
     </>
     
   )
