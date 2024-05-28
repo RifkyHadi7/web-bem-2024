@@ -13,10 +13,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/*" element={<NotFound />} />
-        <Route path="/tentang" element={<Tentangpage />} />
-        <Route path="/comingsoon" element={<ComingSoon />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/*" element={<NotFound />} />
+        <Route exact path="/tentang" element={<Tentangpage />} />
+        <Route exact path="/comingsoon" element={<ComingSoon />} />
       </Routes>
     </BrowserRouter>
   )
