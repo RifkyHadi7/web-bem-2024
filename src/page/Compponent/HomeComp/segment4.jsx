@@ -1,11 +1,4 @@
 import Marquee from "react-fast-marquee";
-import Partner from "../../../assets/partner.svg";
-import sbucks from "../../../assets/SBUCKS-Partner.png";
-import shoescare from "../../../assets/shoescare-Partner.png";
-import otolaundry from "../../../assets/otolaundry-Partner.png";
-import nest from "../../../assets/nest-Partner.png";
-import gutenham from "../../../assets/gutenham-Partner.png";
-import caneyo from "../../../assets/caneyo-Partner.png";
 import Modal from "./Modal";
 import SponsorItem from "./SponsorItem";
 import React, { useState } from "react";

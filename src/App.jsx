@@ -8,24 +8,18 @@ import Tentangpage from "./page/Tentangpage";
 import ComingSoon from "./page/ComingSoon";
 
 function App() {
-  
-
- 
-
   return (
-
-      <BrowserRouter>
+    <BrowserRouter basename="/">
       <Navbar />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/*" element={<NotFound />} />
-          <Route path="/tentang" element={<Tentangpage />} />
-          <Route path="/comingsoon" element={<ComingSoon />} />
-        </Routes>
-      </BrowserRouter>
-
-  );
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<NotFound />} />
+        <Route path="/tentang" element={<Tentangpage />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

@@ -113,13 +113,6 @@ const Footer = () => {
               >
                 Elaborasi Makna 2020
               </a>
-              <a
-                href="https://bemfilkom.ub.ac.id/2019/"
-                target="_blank"
-                className="hover:underline text-xl lg:text-2xl font-light hover:font-normal"
-              >
-                Atmabara 2019
-              </a>
             </div>
           </div>
 
