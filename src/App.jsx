@@ -1,4 +1,4 @@
-import { Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./page/Landing";
 import About from "./page/About";
@@ -9,17 +9,17 @@ import ComingSoon from "./page/ComingSoon";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/*" element={<NotFound />} />
-        <Route exact path="/tentang" element={<Tentangpage />} />
-        <Route exact path="/comingsoon" element={<ComingSoon />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<NotFound />} />
+        <Route path="/tentang" element={<Tentangpage />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
       </Routes>
-    </Router>
-  )
+    </HashRouter>
+  );
 }
 
 export default App;
