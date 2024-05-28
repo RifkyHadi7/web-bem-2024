@@ -63,7 +63,7 @@ const Tentang = () => {
           <div className='mx-8 xl:mx-0 font-lato flex flex-col xl:w-[35rem]'>
             <h3 className='text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-[#252525]'>Apa itu BEM FILKOM UB?</h3>
             <p className='text-justify font-normal text-sm xl:text-2xl mb-5 xl:mb-8 xl:leading-7 text-[#252525]'>BEM FILKOM UB merupakan badan eksekutif yang memiliki 4 fungsi utama dalam membantu mahasiswa FILKOM UB berproses, diantaranya ialah Pelayanan khususnya dibidang Advokasi dan Kesejahteraan Mahasiswa, Pengembangan dalam mengembangkan soft skill serta minat bakat Mahasiswa, Pengabdian dalam mengamalkan salah satu Tri Dharma Perguruan Tinggi, dan Pergerakan yang mewadahi mahasiswa untuk bertindak dalam mengawal isu yang beredar.</p>
-            <button className='w-max ring-1 ring-cust-orange text-cust-orange hover:bg-cust-orange hover:text-white rounded-full px-6 py-2 xl:text-xl'><a href="/tentang">Selengkapnya <FontAwesomeIcon className="relative" icon={faArrowRightLong} /></a></button>
+            <button className='w-max ring-1 ring-cust-orange text-cust-orange hover:bg-cust-orange hover:text-white rounded-full px-6 py-2 xl:text-xl'><a href="/#/tentang">Selengkapnya <FontAwesomeIcon className="relative" icon={faArrowRightLong} /></a></button>
           </div>
         </motion.div>
       </div>
