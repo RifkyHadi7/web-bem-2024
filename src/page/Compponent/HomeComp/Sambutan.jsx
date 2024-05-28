@@ -12,7 +12,7 @@ import { Popper } from '@mui/base/Popper';
 import React, { useState } from "react";
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
-const Sambutan = () => {  
+const Sambutan = () => {
   const [anchorElPresiden, setAnchorElPresiden] = useState(null);
   const [anchorElWakilPresiden, setAnchorElWakilPresiden] = useState(null);
   const [isPictureDownPresiden, setIsPictureDownPresiden] = useState(true);
@@ -21,7 +21,7 @@ const Sambutan = () => {
   const handleClickPresiden = (event) => {
     setAnchorElPresiden(anchorElPresiden ? null : event.currentTarget);
     setIsPictureDownPresiden(!isPictureDownPresiden);
-  };  
+  };
 
   const handleClickWakilPresiden = (event) => {
     setAnchorElWakilPresiden(anchorElWakilPresiden ? null : event.currentTarget);
@@ -83,33 +83,35 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               className="lg:w-[200px] mt-2 w-[150px]"
             />
           </div>
-          <div className="mt-[40px] lg:mt-10 relative">
-            <button
-              className="font-lato ring-1 ring-cust-green bg-cust-green outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-28 ml-0 min-w"
-              aria-describedby={idPresiden}
-              type="button"
-              onClick={handleClickPresiden}
-              style={{ minWidth: "200px" }}
-            >
-              Presiden
-            </button>
-            <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-9px] lg:ml-[160px]" />
-            <img src={isPictureDownPresiden ? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:mt-[-14px] lg:ml-[204px]" />
-            {openPresiden && (
-              <Popper
-                id={idPresiden}
-                open={openPresiden}
-                anchorEl={anchorElPresiden}
-                placement="bottom-start"
-                style={{ position:'fixed'  }}
+          <div className="mt-[40px]  items-center flex flex-col mx-auto  ">
+            <div onClick={handleClickPresiden} className="lg:w-full w-max">
+              <button
+                className="font-lato ring-1 ring-cust-green bg-cust-green outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-5 rounded-full"
+                aria-describedby={idPresiden}
+                type="button"
+
+                style={{ minWidth: "200px" }}
               >
-                <div className="ml-5 mt-[15px]">
-                  <img src={popupPres} />
-                </div>
-              </Popper>
-            )}
+                Presiden
+              </button>
+              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-9px] cursor-pointer" />
+              <img src={isPictureDownPresiden ? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:mt-[-14px] cursor-pointer" />
+              {openPresiden && (
+                <Popper
+                  id={idPresiden}
+                  open={openPresiden}
+                  anchorEl={anchorElPresiden}
+                  placement="bottom-start"
+                  style={{ position: 'fixed' }}
+                >
+                  <div className="w-[200px]  mt-1 flex justify-center">
+                    <img src={popupPres} />
+                  </div>
+                </Popper>
+              )}
+            </div>
             <motion.img
-              initial={{ opacity: 0, y: 50, x: 0, z:0 }}
+              initial={{ opacity: 0, y: 50, x: 0, z: 0 }}
               whileInView={{
                 opacity: 1,
                 y: 0,
@@ -122,39 +124,41 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
               }}
               animate={{ marginTop: openPresiden ? '80px' : '30px' }}
               src='https://res.cloudinary.com/dkncrhkfo/image/upload/v1715917719/pres_kfvo2c.png'
-              className="lg:w-[200px] mt-3 lg:ml-28 mx-auto w-[175px]"
+              className="lg:w-[200px] mt-3  mx-auto w-[175px]"
             />
           </div>
 
-          <div className="mt-10 relative">
-            <div className="wapres" style={{ position: 'relative', width: '100%', height: '100%' }}>
-              <button
-                className="font-lato ring-1 ring-cust-green  bg-cust-green outline-3 outline-gray-200 text-white text-lg font-semibold py-1.5 px-5 rounded-full lg:ml-6 ml-0"
-                aria-describedby={idWakilPresiden}
-                type="button"
-                onClick={handleClickWakilPresiden}
-                style={{ minWidth: "200px", position: 'relative', zIndex: 1 }}
-              >
-                Wakil Presiden
-              </button>
-              <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] lg:ml-[113px]"/>
-              <img src={isPictureDownWakilPresiden? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] lg:ml-[155px]"/>
-              {openWakilPresiden && (
-                <Popper
-                  id={idWakilPresiden}
-                  open={openWakilPresiden}
-                  anchorEl={anchorElWakilPresiden}
-                  placement="bottom-start"
-                  style={{ position:'fixed' }}
+          <div className="mt-10 relative w-full">
+            <div className="wapres w-full items-center" style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'column', height: '100%' }}>
+              <div onClick={handleClickWakilPresiden} className="lg:w-full w-max ">
+                <button
+                  className="font-lato ring-1 ring-cust-green  bg-cust-green outline-3 outline-gray-200 text-white text-lg font-semibold py-1.5 px-5 rounded-full  ml-0"
+                  aria-describedby={idWakilPresiden}
+                  type="button"
+
+                  style={{ minWidth: "200px", position: 'relative', zIndex: 1 }}
                 >
-                  <div className="ml-5 mt-[15px]">
-                    <img src={popupWapres} />
-                  </div>
-                </Popper>
-              )}
+                  Wakil Presiden
+                </button>
+                <img src="https://res.cloudinary.com/dkncrhkfo/image/upload/v1715851631/trapesium_pyjb0a.png" alt="" className="w-[100px] mx-auto mt-[-8px] cursor-pointer" />
+                <img src={isPictureDownWakilPresiden ? arrowBawah : arrowAtas} alt="" className="w-[15px] mx-auto mt-[-15px] cursor-pointer" />
+                {openWakilPresiden && (
+                  <Popper
+                    id={idWakilPresiden}
+                    open={openWakilPresiden}
+                    anchorEl={anchorElWakilPresiden}
+                    placement="bottom-start"
+                    style={{ position: 'fixed' }}
+                  >
+                    <div className="lg:w-[314px] w-[200px] mt-1 flex justify-center">
+                      <img src={popupWapres} />
+                    </div>
+                  </Popper>
+                )}
+              </div>
 
               <motion.img
-                initial={{ opacity: 0, y: 50, x: 0, z:0 }}
+                initial={{ opacity: 0, y: 50, x: 0, z: 0 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
@@ -167,13 +171,13 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
                 }}
                 animate={{ marginTop: openWakilPresiden ? '80px' : '30px' }}
                 src='https://res.cloudinary.com/dkncrhkfo/image/upload/v1715917720/wapres_sdvi6p.png'
-                className="lg:w-[200px] mt-3 lg:ml-16 mx-auto w-[175px]"
+                className="lg:w-[200px] mt-3 mx-auto w-[175px]"
               />
             </div>
           </div>
 
           <div className="mt-10 text-justify mx-auto col-span-2 px-8 text-[16px] lg:text-[20px] font-lato text-cust-black">
-          <motion.div
+            <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
                 opacity: 1,
@@ -194,37 +198,37 @@ Wassalamualaikum Warahmatullahi Wabarakatuh....
                 readMoreText={<span style={{ color: '#208B71', cursor: 'pointer' }}>... Lihat Selengkapnya</span>}
               /> */}
               <div className="whitespace-pre-wrap">
-              <ReactReadMoreReadLess
-                charLimit={350}
-                readMoreText={"Lihat Selengkapnya"}
-                readMoreClassName={"text-cust-green"}
-                readLessText={"Lebih Sedikit..."}
-                readLessClassName={"text-cust-green"}
+                <ReactReadMoreReadLess
+                  charLimit={350}
+                  readMoreText={"Lihat Selengkapnya"}
+                  readMoreClassName={"text-cust-green"}
+                  readLessText={"Lebih Sedikit..."}
+                  readLessClassName={"text-cust-green"}
 
-              >
-                {longText}
-              </ReactReadMoreReadLess>
+                >
+                  {longText}
+                </ReactReadMoreReadLess>
               </div>
-              
+
               <br />
               <span className="font-extrabold text-cust-black">BEM FILKOM UB 2024</span>
             </motion.div>
           </div>
         </div>
         <div className="mt-5 mb-5">
-        <motion.div
-                initial={{ opacity: 0, y: 50, x: 0 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    type: "ease",
-                    duration: 1.0,
-                    damping: 10,
-                    stiffness: 40,
-                },
-              }}>
-          <span className="font-extrabold text-cust-green font-lato justify-center mx-auto lg:text-[28px] text-[24px]" >#SatuRagaWujudkanAsa</span>
+          <motion.div
+            initial={{ opacity: 0, y: 50, x: 0 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "ease",
+                duration: 1.0,
+                damping: 10,
+                stiffness: 40,
+              },
+            }}>
+            <span className="font-extrabold text-cust-green font-lato justify-center mx-auto lg:text-[28px] text-[24px]" >#SatuRagaWujudkanAsa</span>
           </motion.div>
         </div>
       </div>

@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col text-center pt-10 lg:text-right lg:w-1/4 lg:pt-0 lg:mr-10 lg:pr-8 gap-3">
+            <div className="flex flex-col text-center lg:text-right lg:w-1/4 lg:pt-0  lg:mr-10 lg:pr-8 gap-3">
               <h3 className="text-cust-white font-semibold mb-3 text-2xl lg:text-3xl">
                 Tautan Terkait
               </h3>
@@ -127,7 +127,7 @@ const Footer = () => {
             <hr className="w-[1200px] h-0 border-[1px] border-solid border-white" />
           </div>
 
-          <div className="group flex justify-center font-semibold text-center py-5 sm:body5 sm:py-10 md:text-base xl:text-xl">
+          <div className="group flex justify-center font-semibold text-center py-5 sm:body5 sm:py-10 md:text-base xl:text-xl mx-5">
             Made with 🧡️ by Biro Pengembangan Informasi & Teknologi
             2024
             {/* <div className="opacity-0 lg:group-hover:opacity-100 transition-all duration-500 ml-2">

@@ -7,9 +7,8 @@ import Segment4 from "./Compponent/HomeComp/segment4";
 import Tentang from "./Compponent/HomeComp/Tentang";
 import Artikel from "./Compponent/HomeComp/Artikel";
 import Company from "./Compponent/HomeComp/Companydown";
-import Value from "./Compponent/HomeComp/Valuemag";
-import Contoh from "./Compponent/HomeComp/Contoh";
 import Footer from "./Compponent/Footer";
+import Contoh from "./Compponent/HomeComp/Contoh";
 // import Sambutan from "./Compponent/HomeComp/Sambutan";
 
 

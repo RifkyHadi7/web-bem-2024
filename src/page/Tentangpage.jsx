@@ -7,12 +7,12 @@ import Footer from "./Compponent/Footer";
 
 const Tentang = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <Segment1 />
             <SegmentTujuan/>
             <Segment2 />
             <Segment3 />
-            <Footer />
+            <Footer/>
         </div>
     )
 };

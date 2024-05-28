@@ -8,7 +8,7 @@ const About = () => {
     <>
     <Segment1 />
     <SegmentTujuan />
-    <Footer />
+    <Footer/>
     </>
   )
 
